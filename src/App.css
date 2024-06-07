@@ -1,38 +1,136 @@
+* {
+  background-color: #faedcd;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+  background-color: inherit;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vh 2vw 2vh 2vw;
+}
+
+#navbar-home {
+  margin: 2vh 0vw 2vh 0vw;
+}
+
+#navbar-other {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#navbar-other div {
+  margin: 2vh 2vw 2vh 2vw;
+}
+
+/* section style */
+
+section {
+  width: 100vw;
+}
+
+.section-content {
+  width: 60vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* content style */
+
+.content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 10vh 10vw 10vh 10vw;
+}
+
+.content .name {
+  margin: 10vh 10vw 2vh 10vw;
+  padding: 5vh 5vw 5vh 5vw;
+  text-align: center;
+  font-size: 6vh;
+}
+
+#landing {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 80vh;
+}
+
+#about-me-button {
+  text-decoration: none;
+  color: brown;
+  margin-top: 15vh;
+}
+
+/* socials */
+
+.content .socials {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.socials .links {
+  display: flex;
+  justify-content: space-between;
+  width: 6vw;
+}
+
+.socials a img {
+  max-width: 5vw;
+  max-height: 5vh;
+  border: solid black;
+  border-width: .01vw .2vw .2vw .01vw;
+}
+
+.socials a img:hover {
+  border-width: 0.1px;
+}
+
+.socials h3 {
+  font-weight: normal;
+}
+
+/* bio */
+
+.content .bio {
+  margin: 10vh 0vw 0vh 0vw;
+}
+
+/* profile section */
+
+#about-me {
+  display: flex;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: beige;
 }
 
-.App-link {
-  color: #61dafb;
+#about-me .section-content {
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#about-me img {
+  max-width: 30vw;
+  max-height: 30vh;
+}
+
+/* skills */
+
+.skill {
+  min-width: 10vw;
+  min-height: 10vh;
+  background-color: red;
 }
